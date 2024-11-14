@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Java script</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- <li id="$(index)">$(el)</li> -->
+    <h1>Curso de CSharp</h1>
+    <h2>Indice Tematico</h2>
+    <ul>
+        <li><a href="cursoCsharp.html#referencia">Referencias</a></li>
+        <li><a href="cursoCsharp.html#configurar">Configurar DotNet-ef</a></li>
+        <li><a href="cursoCsharp.html#ejercicios_dotnet_ef">ejercicios DotNet-ef</a></li>
+        <li><a href="cursoCsharp.html#db_context">Creacion de DBContext</a></li>
+        <li><a href="cursoCsharp.html#migracion">migracion de Base de Datos</a></li>
+        <li><a href="cursoCsharp.html#cambiar_campo">Cambiar tamaño del campo en la entidad</a></li>
+
+
+    </ul>
+
+    <a href="cursoCSharp.html">⏫</a>
+    <hr>
+    <h2 id="configurar">Configurar DotNet-ef</h2>
+    <article>
+        tomaremos como referencias el curso de Entity Framework Core de NetMentor <a
+            href="https://www.youtube.com/watch?v=4azrTdMtaO4&list=PLesmOrW3mp4i2RdfsPI5R6o5EVacGuovz">EFCore</a>. <br>
+        Tambien podemos ver un blog donde explica un poco mas <a
+            href="https://www.netmentor.es/entrada/database-first">blog</a>
+        para crear un proyecto desde la consola hay que ejecutar los siguientes pasos:
+    </article>
+
+    <h3 id="instalacion_dotnet_ef">1. Instalamos en dotnet-ef</h3>
+    <article>
+        para instalarlo usamos el comando desde el teminal o por cmd: <br>
+        <strong>dotnet tool install --global dotnet-ef</strong> <br>
+
+        para actualizar la version debemos usar el comando: <br>
+        <strong>dotnet tool update --global dotnet-ef</strong><br>
+
+    </article>
+
+    <h3 id="instalacion_dotnet_ef">2. Creamos un proyecto WebApi</h3>
+    <article>
+        Escogemos nuevo proyecto y escibimos en la busqueda <strong>WebApi</strong><br>
+    </article>
+
+    <h3 id="adicionamos_ec_al_proyecto">3. añadimos el paquete Microsoft Entity Core a proyecto</h3>
+    <article>
+        Si estamos trabajando en Visual Studio comunitive nada mas hay que instalar
+        <strong>EntityFrameworkCore.Tools</strong>, de la siguiente forma: <br>
+        <strong>Install-Package Microsoft.EntityFrameworkCore.Tools</strong><br><br>
+
+        si esta usando visual studio Code, debe adicionar el paquete <strong>EntityFrameworkCore.Design</strong>, en
+        Comunitive no es necesario agregarlo,
+        y se realiza de la siguiente forma: <br>
+
+        para añadir el paquete no me funcionó escogiendo desde el administrador NuGet, tuve que hacerlos desde
+        consola: <br>
+        Ve a Herramientas > Administrador de paquetes NuGet > Consola del Administrador de paquetes. <br>
+        despues ejecute el siguiente comando: <br>
+        <strong>Install-Package Microsoft.EntityFrameworkCore.Design -Version 9.0.0</strong> <br>
+    </article>
+
+    <h3 id="adicionamos_sqlserver">4. añadimos el paquete Sqlserver a proyecto</h3>
+    <article>
+        y para el driver de Sqlserver me tocó instalar: <br>
+        <strong>Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 9.0.0</strong> <br><br>
+    </article>
+
+    <h3 id="adicionamos_consexion_sqlserver">5. añadimos cadena de conexion</h3>
+    <article>
+        Esto hay que ejecutarlo desde cmd: <br>
+        dotnet ef dbcontext scaffold "Server=192.168.50.6;Database=PRUEBA;User
+        Id=sa;Password=Clave01.;Trusted_Connection=False;MultipleActiveResultSets=True;"
+        Microsoft.EntityFrameworkCore.SqlServer -o Models <br>
+    </article>
+
+
+    <a href="cursoCSharp.html">⏫</a>
+    <hr>
+    <h2 id="db_context">Creacion de DbContext</h2>
+    <article>
+        <h3>creamos el DBContext</h3>
+        <pre>
+            public class ApplicationDbContext:DbContext
+            {
+                public ApplicationDbContext(DbContextOptions options) : base(options) 
+                { 
+        
+                }
+        
+                protected override void OnModelCreating(ModelBuilder modelBuilder)
+                {
+                    base.OnModelCreating(modelBuilder);
+        
+                    //modelBuilder.Entity<Genero>().HasKey(x => x.Id);
+                    modelBuilder.Entity<Genero>().Property(x => x.Nombre).HasMaxLength(150);
+                }
+        
+                public DbSet&lt;Genero> Generos => Set&lt;Genero>();
+                    
+        
+            }
+        
+        </pre>
+    </article>
+
+    <a href="cursoCSharp.html">⏫</a>
+    <hr>
+    <h2 id="migracion">Migracion de Base de datos</h2>
+    <article>
+        para ejecutar la migracion debemos escribir el siguiente comando en el adminitrador de paquetes:
+        <br>
+        <strong>Add-Migration Inicial</strong><br><br>
+
+        para que se acualice la base de datos con los cambios que se haga en la entidad hay que escribir
+        el siguiente comando: <br>
+        <strong>update-database</strong><br>
+    </article>
+
+
+    <a href="cursoCSharp.html">⏫</a>
+    <hr>
+    <h2 id="cambiar_campo">cambiar tamaño campo en la entidad</h2>
+    <article>
+        vamos a crear el tamaño del campo nombre que pase a 150, actualmente está en Max_length, <br>
+        Esto se puede hacer dentro del DBContext como en el ejemplo anterior  o se puede cuando se crea la clase de la entidad,
+        colocando la anotacion <strong>[StringLength(maximumLength:150)]</strong> 
+
+        <pre>
+            public class Genero
+            {
+                public int Id { get; set; }
+                [StringLength(maximumLength:150)]
+                public string Nombre { get; set; } = null!;
+            }
+        </pre>
+
+        Crearemos una nueva migracion con el nombre <strong>GeneroNombre</strong> de la siguiente forma: <br>
+        <strong>Add-Migration GeneroNombre</strong><br><br>
+
+        sale un mensaje de advertencia porque se pueden perder datos, ya que estamos disminuyendo el tamaña del campo. 
+        pero si estamos seguros hay que escribir el siguiente comando para confirmar los cambios: <br><br>
+
+        <strong>update-database</strong><br>
+
+        si no estas dentro del administrador de paquetes del proyecto o estas usando visual studio code, entoces tienes que
+        hacerlo desde cmd, y el comando seria: <br>
+        <strong>dotnet ef database update</strong>
+
+    </article>
+
+
+
+</body>
+
+</html>
