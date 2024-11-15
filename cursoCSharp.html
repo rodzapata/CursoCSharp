@@ -15,6 +15,7 @@
     <h2>Indice Tematico</h2>
     <ul>
         <li><a href="cursoCsharp.html#referencia">Referencias</a></li>
+        <li><a href="cursoCsharp.html#atajos">atajos del teclado en visual studio</a></li>
         <li><a href="cursoCsharp.html#configurar">Configurar DotNet-ef</a></li>
         <li><a href="cursoCsharp.html#ejercicios_dotnet_ef">ejercicios DotNet-ef</a></li>
         <li><a href="cursoCsharp.html#db_context">Creacion de DBContext</a></li>
@@ -24,16 +25,54 @@
 
     </ul>
 
+
+    <a href="cursoCSharp.html">⏫</a>
+    <hr>
+    <h2 id="referencia">Referencias</h2>
+    <article>
+        tomaremos como referencias el curso de Entity Framework Core de NetMentor <a
+            href="https://www.youtube.com/watch?v=4azrTdMtaO4&list=PLesmOrW3mp4i2RdfsPI5R6o5EVacGuovz" target="_blank">EFCore</a>. <br>
+        Tambien podemos ver un blog donde explica un poco mas <a
+            href="https://www.netmentor.es/entrada/database-first" target="_blank">blog</a>
+        para crear un proyecto desde la consola hay que ejecutar los siguientes pasos:
+    </article>
+
+    <a href="cursoCSharp.html">⏫</a>
+    <hr>
+    <h2 id="atajos">Atajos de teclado en visual Studio</h2>
+    <article>
+        <table>
+            <thead>
+                <tr>
+                    <th>Combinacion del teclado </th>
+                    <th>Resultado </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>cw + tab</td>
+                    <td>Console.WriteLine();</td>
+                </tr>
+                <tr>
+                    <td>ctor + tab</td>
+                    <td>Genera un contructor vacio de la clase;</td>
+                </tr>
+                <tr>
+                    <td>prop + tab</td>
+                    <td>Genera propiedad de clases ;</td>
+                </tr>
+                <tr>
+                    <td>propfull + tab</td>
+                    <td>Genera propiedad con su campo de respaldo get y set ;</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </article>
+
     <a href="cursoCSharp.html">⏫</a>
     <hr>
     <h2 id="configurar">Configurar DotNet-ef</h2>
-    <article>
-        tomaremos como referencias el curso de Entity Framework Core de NetMentor <a
-            href="https://www.youtube.com/watch?v=4azrTdMtaO4&list=PLesmOrW3mp4i2RdfsPI5R6o5EVacGuovz">EFCore</a>. <br>
-        Tambien podemos ver un blog donde explica un poco mas <a
-            href="https://www.netmentor.es/entrada/database-first">blog</a>
-        para crear un proyecto desde la consola hay que ejecutar los siguientes pasos:
-    </article>
 
     <h3 id="instalacion_dotnet_ef">1. Instalamos en dotnet-ef</h3>
     <article>
@@ -130,8 +169,9 @@
     <h2 id="cambiar_campo">cambiar tamaño campo en la entidad</h2>
     <article>
         vamos a crear el tamaño del campo nombre que pase a 150, actualmente está en Max_length, <br>
-        Esto se puede hacer dentro del DBContext como en el ejemplo anterior  o se puede cuando se crea la clase de la entidad,
-        colocando la anotacion <strong>[StringLength(maximumLength:150)]</strong> 
+        Esto se puede hacer dentro del DBContext como en el ejemplo anterior o se puede cuando se crea la clase de la
+        entidad,
+        colocando la anotacion <strong>[StringLength(maximumLength:150)]</strong>
 
         <pre>
             public class Genero
@@ -145,12 +185,13 @@
         Crearemos una nueva migracion con el nombre <strong>GeneroNombre</strong> de la siguiente forma: <br>
         <strong>Add-Migration GeneroNombre</strong><br><br>
 
-        sale un mensaje de advertencia porque se pueden perder datos, ya que estamos disminuyendo el tamaña del campo. 
+        sale un mensaje de advertencia porque se pueden perder datos, ya que estamos disminuyendo el tamaña del campo.
         pero si estamos seguros hay que escribir el siguiente comando para confirmar los cambios: <br><br>
 
         <strong>update-database</strong><br>
 
-        si no estas dentro del administrador de paquetes del proyecto o estas usando visual studio code, entoces tienes que
+        si no estas dentro del administrador de paquetes del proyecto o estas usando visual studio code, entoces tienes
+        que
         hacerlo desde cmd, y el comando seria: <br>
         <strong>dotnet ef database update</strong>
 

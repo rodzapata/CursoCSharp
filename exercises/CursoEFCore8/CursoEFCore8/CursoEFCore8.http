@@ -1,0 +1,6 @@
+@CursoEFCore8_HostAddress = http://localhost:5112
+
+GET {{CursoEFCore8_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
