@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Ryzen\\Documents\\workspace\\CursoCSharp\\exercises\\CursoEFCore8\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7170908B-6B3F-47E2-88D6-0FAA0C57CAB9}|CursoEFCore8\\CursoEFCore8.csproj|c:\\users\\ryzen\\documents\\workspace\\cursocsharp\\exercises\\cursoefcore8\\cursoefcore8\\entities\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7170908B-6B3F-47E2-88D6-0FAA0C57CAB9}|CursoEFCore8\\CursoEFCore8.csproj|solutionrelative:cursoefcore8\\entities\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7170908B-6B3F-47E2-88D6-0FAA0C57CAB9}|CursoEFCore8\\CursoEFCore8.csproj|c:\\users\\ryzen\\documents\\workspace\\cursocsharp\\exercises\\cursoefcore8\\cursoefcore8\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7170908B-6B3F-47E2-88D6-0FAA0C57CAB9}|CursoEFCore8\\CursoEFCore8.csproj|solutionrelative:cursoefcore8\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7170908B-6B3F-47E2-88D6-0FAA0C57CAB9}|CursoEFCore8\\CursoEFCore8.csproj|c:\\users\\ryzen\\documents\\workspace\\cursocsharp\\exercises\\cursoefcore8\\cursoefcore8\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7170908B-6B3F-47E2-88D6-0FAA0C57CAB9}|CursoEFCore8\\CursoEFCore8.csproj|solutionrelative:cursoefcore8\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,20 +19,12 @@
       "RelativeMoniker": "D:0:0:{7170908B-6B3F-47E2-88D6-0FAA0C57CAB9}|CursoEFCore8\\CursoEFCore8.csproj|solutionrelative:cursoefcore8\\entities\\genero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7170908B-6B3F-47E2-88D6-0FAA0C57CAB9}|CursoEFCore8\\CursoEFCore8.csproj|c:\\users\\ryzen\\documents\\workspace\\cursocsharp\\exercises\\cursoefcore8\\cursoefcore8\\entities\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7170908B-6B3F-47E2-88D6-0FAA0C57CAB9}|CursoEFCore8\\CursoEFCore8.csproj|solutionrelative:cursoefcore8\\entities\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7170908B-6B3F-47E2-88D6-0FAA0C57CAB9}|CursoEFCore8\\CursoEFCore8.csproj|c:\\users\\ryzen\\documents\\workspace\\cursocsharp\\exercises\\cursoefcore8\\cursoefcore8\\migrations\\20241114181640_generonombre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7170908B-6B3F-47E2-88D6-0FAA0C57CAB9}|CursoEFCore8\\CursoEFCore8.csproj|solutionrelative:cursoefcore8\\migrations\\20241114181640_generonombre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7170908B-6B3F-47E2-88D6-0FAA0C57CAB9}|CursoEFCore8\\CursoEFCore8.csproj|c:\\users\\ryzen\\documents\\workspace\\cursocsharp\\exercises\\cursoefcore8\\cursoefcore8\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7170908B-6B3F-47E2-88D6-0FAA0C57CAB9}|CursoEFCore8\\CursoEFCore8.csproj|solutionrelative:cursoefcore8\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7170908B-6B3F-47E2-88D6-0FAA0C57CAB9}|CursoEFCore8\\CursoEFCore8.csproj|c:\\users\\ryzen\\documents\\workspace\\cursocsharp\\exercises\\cursoefcore8\\cursoefcore8\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7170908B-6B3F-47E2-88D6-0FAA0C57CAB9}|CursoEFCore8\\CursoEFCore8.csproj|solutionrelative:cursoefcore8\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7170908B-6B3F-47E2-88D6-0FAA0C57CAB9}|CursoEFCore8\\CursoEFCore8.csproj|c:\\users\\ryzen\\documents\\workspace\\cursocsharp\\exercises\\cursoefcore8\\cursoefcore8\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 17,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -98,27 +98,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Actor.cs",
               "DocumentMoniker": "C:\\Users\\Ryzen\\Documents\\workspace\\CursoCSharp\\exercises\\CursoEFCore8\\CursoEFCore8\\Entities\\Actor.cs",
               "RelativeDocumentMoniker": "CursoEFCore8\\Entities\\Actor.cs",
               "ToolTip": "C:\\Users\\Ryzen\\Documents\\workspace\\CursoCSharp\\exercises\\CursoEFCore8\\CursoEFCore8\\Entities\\Actor.cs",
               "RelativeToolTip": "CursoEFCore8\\Entities\\Actor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T18:36:31.002Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20241114181640_GeneroNombre.cs",
-              "DocumentMoniker": "C:\\Users\\Ryzen\\Documents\\workspace\\CursoCSharp\\exercises\\CursoEFCore8\\CursoEFCore8\\Migrations\\20241114181640_GeneroNombre.cs",
-              "RelativeDocumentMoniker": "CursoEFCore8\\Migrations\\20241114181640_GeneroNombre.cs",
-              "ToolTip": "C:\\Users\\Ryzen\\Documents\\workspace\\CursoCSharp\\exercises\\CursoEFCore8\\CursoEFCore8\\Migrations\\20241114181640_GeneroNombre.cs",
-              "RelativeToolTip": "CursoEFCore8\\Migrations\\20241114181640_GeneroNombre.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABEAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T18:16:40.795Z"
+              "WhenOpened": "2024-11-14T18:36:31.002Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -134,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Genero.cs",
               "DocumentMoniker": "C:\\Users\\Ryzen\\Documents\\workspace\\CursoCSharp\\exercises\\CursoEFCore8\\CursoEFCore8\\Entities\\Genero.cs",
               "RelativeDocumentMoniker": "CursoEFCore8\\Entities\\Genero.cs",
@@ -170,13 +159,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Ryzen\\Documents\\workspace\\CursoCSharp\\exercises\\CursoEFCore8\\CursoEFCore8\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "CursoEFCore8\\ApplicationDbContext.cs",
               "ToolTip": "C:\\Users\\Ryzen\\Documents\\workspace\\CursoCSharp\\exercises\\CursoEFCore8\\CursoEFCore8\\ApplicationDbContext.cs",
               "RelativeToolTip": "CursoEFCore8\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAwBoAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-13T18:12:23.273Z",
               "EditorCaption": ""
@@ -195,7 +184,36 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ryzen\\Documents\\workspace\\CursoCSharp\\exercises\\CursoEFCore8\\CursoEFCore8\\Program.cs",
+              "RelativeDocumentMoniker": "CursoEFCore8\\Program.cs",
+              "ToolTip": "C:\\Users\\Ryzen\\Documents\\workspace\\CursoCSharp\\exercises\\CursoEFCore8\\CursoEFCore8\\Program.cs",
+              "RelativeToolTip": "CursoEFCore8\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T17:59:32.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "20241114181640_GeneroNombre.cs",
+              "DocumentMoniker": "C:\\Users\\Ryzen\\Documents\\workspace\\CursoCSharp\\exercises\\CursoEFCore8\\CursoEFCore8\\Migrations\\20241114181640_GeneroNombre.cs",
+              "RelativeDocumentMoniker": "CursoEFCore8\\Migrations\\20241114181640_GeneroNombre.cs",
+              "ToolTip": "C:\\Users\\Ryzen\\Documents\\workspace\\CursoCSharp\\exercises\\CursoEFCore8\\CursoEFCore8\\Migrations\\20241114181640_GeneroNombre.cs",
+              "RelativeToolTip": "CursoEFCore8\\Migrations\\20241114181640_GeneroNombre.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T18:16:40.795Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "C:\\Users\\Ryzen\\Documents\\workspace\\CursoCSharp\\exercises\\CursoEFCore8\\CursoEFCore8\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "CursoEFCore8\\WeatherForecast.cs",
@@ -204,22 +222,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-13T17:59:37.947Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Ryzen\\Documents\\workspace\\CursoCSharp\\exercises\\CursoEFCore8\\CursoEFCore8\\Program.cs",
-              "RelativeDocumentMoniker": "CursoEFCore8\\Program.cs",
-              "ToolTip": "C:\\Users\\Ryzen\\Documents\\workspace\\CursoCSharp\\exercises\\CursoEFCore8\\CursoEFCore8\\Program.cs",
-              "RelativeToolTip": "CursoEFCore8\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T17:59:32.573Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }
