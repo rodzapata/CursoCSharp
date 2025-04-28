@@ -21,6 +21,7 @@
         <li><a href="cursoCsharp.html#db_context">Creacion de DBContext</a></li>
         <li><a href="cursoCsharp.html#migracion">migracion de Base de Datos</a></li>
         <li><a href="cursoCsharp.html#cambiar_campo">Cambiar tamaño del campo en la entidad</a></li>
+        <li><a href="cursoCsharp.html#generar_key">Como generar una key que usaremos como base para los token desde SQLServer</a></li>
 
 
     </ul>
@@ -34,7 +35,10 @@
             href="https://www.youtube.com/watch?v=4azrTdMtaO4&list=PLesmOrW3mp4i2RdfsPI5R6o5EVacGuovz" target="_blank">EFCore</a>. <br>
         Tambien podemos ver un blog donde explica un poco mas <a
             href="https://www.netmentor.es/entrada/database-first" target="_blank">blog</a>
-        para crear un proyecto desde la consola hay que ejecutar los siguientes pasos:
+        para crear un proyecto desde la consola hay que ejecutar los siguientes pasos: <br>
+        Tambien encontre unos videos muy buenos de JWT con EF Core: 
+        <a href="https://www.youtube.com/watch?v=i3trcykG7bU&t=336s" target="_blank" rel="noopener noreferrer">Web API codigo estudiante</a> <br>
+        
     </article>
 
     <a href="cursoCSharp.html">⏫</a>
@@ -197,6 +201,19 @@
 
     </article>
 
+    <a href="cursoCSharp.html">⏫</a>
+    <hr>
+    <h2 id="generar_key">Generar key como base para nuestro Token usando Sql</h2>
+    <article>
+        para usar JWT debemos proporcionar como base un key que debe tener como minimo 32 caracteres para que sea segura,
+        nos podemos ayudar usando SQL. <br>
+        <pre>
+            select newid()
+            select len('8993CF08-903B-4BFC-994D-7297AB295914')
+        </pre>
+        En mi caso me genero una key de 36 caracteres. <br>
+
+    </article>
 
 
 </body>
