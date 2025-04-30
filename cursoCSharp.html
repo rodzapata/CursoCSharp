@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso de Java script</title>
+    <title>Curso de C#</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -22,6 +22,8 @@
         <li><a href="cursoCsharp.html#migracion">migracion de Base de Datos</a></li>
         <li><a href="cursoCsharp.html#cambiar_campo">Cambiar tamaño del campo en la entidad</a></li>
         <li><a href="cursoCsharp.html#generar_key">Como generar una key que usaremos como base para los token desde SQLServer</a></li>
+        <li><a href="cursoCsharp.html#ncapas">Manejo de NCapas</a></li>
+        <li><a href="cursoCsharp.html#webapi_first_data">Web Api primero la base de datos + JWT</a></li>
 
 
     </ul>
@@ -215,6 +217,65 @@
 
     </article>
 
+    <a href="cursoCSharp.html">⏫</a>
+    <hr>
+    <h2 id="ncapas">Manejo de NCapas</h2>
+    <article>
+       Lo primero que dedemos hacer es crar un solucion en blanco, que será la encargada de contener los diferentes proyectos de cada Capa. <br>
+       asi que abrimos nuevo proyecto y en la busqueda escribimos <strong>solu</strong> para crear la solucion vacia. <br>
+       las capas pueden ser proyectos tipos bibliotecas, <br>
+       entonces con el boton derecho le damos apregar proyecto tipo bibioteca de clases y le ponemos como nombre <strong>ProyectoModelo</strong>,
+       <strong>ProyectoData</strong>, <br>
+       ahora agregamos un proyecto llamanda <strong>ProyectoWebApi</strong> este proyecto es tipo <strong>WebApi</strong> <br>
+
+
+    </article>
+
+    <a href="cursoCSharp.html">⏫</a>
+    <hr>
+    <h2 id="webapi_first_data">Web Api primero la base de datos</h2>
+    <article>
+        el video instructivo del paso a paso se encuentra en <a href="https://www.youtube.com/watch?v=i3trcykG7bU&t=336s" target="_blank" rel="noopener noreferrer">net core + web api+ JWT</a> <br>
+        pasos en sql server : <br>
+        <ul>
+            <li>Crear base de datos <strong>Servi_Erp</strong></li>
+            <li>Crear tabla de usuario </li>
+            <li>Crear tabla factura </li>
+            <li>Crear tabla factura_detalle </li>
+        </ul>
+
+        pasos en visual studio Comnunitive : <br>
+        <ul>
+            <li>Crear un proyecto ASP NET core Web Api</li>
+            <li><a href="cursoCsharp.html#instalar_paquete">instalar paquetes NuGet para EF y JWT</a></li>
+            <li><a href="cursoCsharp.html#configurar_data_base">Configurar base de datos en carpeta Models</a></li>
+            <li> </li>
+            <li>Configurar conexions a base de datos y JWT en <strong>appsettings.json</strong> </li>
+        </ul>
+
+        <h2 id="instalar_paquete">instalamos paquetes Nuget</h2>
+        <article>
+            Nos ubicamos en la solucion con el boton derecho del mouse escogemos <strong>administrador de paquetes Nuget</strong> <br>
+            escribimos dentro de la pestaña examinar <strong>entiy sqlserv</strong> para instalar el paquete <strong>Microsoft.EntityFrameworkCore.SqlServer</strong>,
+            version 9.0.4 . <br>
+            ahora escribimos <strong>entity tools</strong> para instalar el paquete <strong>Microsoft.EntityFrameworkCore.Tools</strong> version 9.0.4 <br>
+            ahora esciibimos <strong>authentica</strong> para instalar el paquete <strong>Microsoft.AspNetCore.Authentication.JwtBeare</strong>
+            version 8.0.15 <br> Esta es la version compatible con Net 8 , con la version 9.0.4 dice que debe ser la version net 9. <br>
+        </article>
+
+        <h2 id="configurar_data_base">Configurar base de datos en carpeta Models</h2>
+        <article>
+            Primero creamos una carpeta <strong>Models</strong> <br>
+            Boton derecho del mouse y escogemos Agregar nueva carpeta y le ponemos el nombre de Models <br>
+            ahora abrimos la consola desde visual estudio, <br>
+            en el proyecto damos boton derecho y escogemos <strong>herramientas - administrador de paquetes Nuget - Consola administrador de paquetes</strong> - <br> 
+            debe aparecer el promop <strong>PM</strong> y escribimos : <br>
+            scaffold-DbContext "Server=PC127\\SQLEXPRESS;Database=servi_erp;User Id=sa;Password=Clave01.;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models
+            scaffold-DbContext "Server=localhost,61061;Database=servi_erp;User Id=sa;Password=Clave01.;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models
+
+        </article>
+
+    </article>
 
 </body>
 
