@@ -18,6 +18,7 @@
         <li><a href="cursoCsharp.html#instalacion">Instalacion</a></li>
         <li><a href="cursoCsharp.html#consola-vstudio">creacion de un proyecto de consola desde visual studio Code</a></li>
         <li><a href="cursoCsharp.html#atajos">atajos del teclado en visual studio</a></li>
+        <li><a href="cursoCsharp.html#basico-array">Array</a></li>
         <li><a href="cursoCsharp.html#configurar">Configurar DotNet-ef</a></li>
         <li><a href="cursoCsharp.html#ejercicios_dotnet_ef">ejercicios DotNet-ef</a></li>
         <li><a href="cursoCsharp.html#db_context">Creacion de DBContext</a></li>
@@ -103,6 +104,67 @@
                 </tr>
             </tbody>
         </table>
+
+    </article>
+
+    <a href="cursoCSharp.html">⏫</a>
+    <hr>
+    <h2 id="basico-array">Array</h2>
+    <article>
+        Los array son los listatados mas basico y su sintasix es : <br>
+        <pre>
+            int[] numeros = new int[3] ; //defininos una array de numeros tipo numero 
+            numeros[0]=10 ;
+            numeros[1]=20 ;
+            numeros[2]=30 ;
+        </pre>    
+        Tambien podemos declaralo e inicializarlo en una sola linea de la siguiente forma: <br>
+        <pre>
+            int[] numeros2 = new int[3] { 40, 50, 60 };
+
+            foreach (var item in numeros2)
+            {
+                System.Console.WriteLine(item);
+            }
+        </pre>    
+        Cuando expecificamos el tipo del array al momento de definirlo se llama array explecito  pero tambien existe los 
+        array implicito donde el compilador es el que determina que tipo de array es, para esto se utiliza el comando <strong>Var</strong>,
+        en el lugar del tipo de array ejemplo : <br>
+        <pre>
+            Console.WriteLine("Array implicito");
+            var numeros3 = new[] { 60, 70, 80 };
+        </pre>
+        Que aporta los array implicitos, en caso que se define un array como entero y en el llenado se coloca un valor con decimal, 
+        el C# arroja en error al tratar de convertir el tipo de datos <br>
+        en cambio con el array implicito no sucede esto.
+        <pre>
+                 int[] numeros2 = new int[3] { 40, 50, 60.25 };
+        </pre> 
+        <strong>Array de Objetos</strong>, ahora crearemos una clase Empleado que tiene un contructor que recibe nombre y edad. <br>
+        <pre>
+        public class Empleado
+        {
+            public string Nombre { get; }
+            public int Edad { get; }
+
+            public Empleado(string nombre, int edad)
+            {
+                Nombre = nombre;
+                Edad = edad;
+            }
+        }
+        </pre>
+        creamos un array de objeto de la clase Empleado y agregamos nuestro primer objeto al arrary . <br>
+        <pre>
+            Empleado[] arrayEmpleado = new Empleado[2];
+            arrayEmpleado[0] = new Empleado("rondey", 50);
+        </pre>
+        Tambien podemos crear una instancia de Empleado con el objeto Cecilia y luego lo agregamos dentro del array de Objetos <br>
+        <pre>
+            //otra forma de crear primero una instanncia de la clase empleado y luego se agrega al array de objetos.
+            Empleado() ceci = new Empleado("cecilia", 37);
+            arrayEmpleado[1] = ceci;
+        </pre>
 
     </article>
 
