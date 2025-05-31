@@ -18,6 +18,8 @@
         <li><a href="cursoCsharp.html#instalacion">Instalacion</a></li>
         <li><a href="cursoCsharp.html#consola-vstudio">creacion de un proyecto de consola desde visual studio Code</a></li>
         <li><a href="cursoCsharp.html#atajos">atajos del teclado en visual studio</a></li>
+        <li><a href="cursoCsharp.html#ruta">Ruta de aprendizaje </a></li>
+        <li><a href="cursoCsharp.html#basico-array">Array</a></li>
         <li><a href="cursoCsharp.html#configurar">Configurar DotNet-ef</a></li>
         <li><a href="cursoCsharp.html#ejercicios_dotnet_ef">ejercicios DotNet-ef</a></li>
         <li><a href="cursoCsharp.html#db_context">Creacion de DBContext</a></li>
@@ -106,6 +108,165 @@
 
     </article>
 
+    <a href="cursoCSharp.html">⏫</a>
+    <hr>
+    <h2 id="ruta">Ruta de aprendizaje</h2>
+    <article>
+        Esta es la ruta de aprendizaje para convertirse en Back End, recomendada por Hector de Leon 
+        <a href="https://hdeleon.net/roadmap-programador-backend-net/" target="_blank" rel="noopener noreferrer">Roadmap </a> 
+        Tambien existe esta otra ruta <a href="https://www.youtube.com/watch?v=xTIv_rkaWE4" target="_blank" rel="noopener noreferrer">The coder Cave</a>
+    </article>
+
+
+    <a href="cursoCSharp.html">⏫</a>
+    <hr>
+    <h2 id="basico-array">Array</h2>
+    <article>
+        Los array o arreglos son colecciones de datos de un mismo tipo, tiene un tamaño fijo y los elemento se puede acceder por su indice  : <br>
+        <pre>
+            int[] numeros = new int[3] ; //defininos una array de numeros tipo numero 
+            numeros[0]=10 ;
+            numeros[1]=20 ;
+            numeros[2]=30 ;
+        </pre>    
+        Tambien podemos declaralo e inicializarlo en una sola linea de la siguiente forma: <br>
+        <pre>
+            int[] numeros2 = new int[3] { 40, 50, 60 };
+
+            foreach (var item in numeros2)
+            {
+                System.Console.WriteLine(item);
+            }
+        </pre>    
+        Cuando expecificamos el tipo del array al momento de definirlo se llama array explecito  pero tambien existe los 
+        array implicito donde el compilador es el que determina que tipo de array es, para esto se utiliza el comando <strong>Var</strong>,
+        en el lugar del tipo de array ejemplo : <br>
+        <pre>
+            Console.WriteLine("Array implicito");
+            var numeros3 = new[] { 60, 70, 80 };
+        </pre>
+        Que aporta los array implicitos, en caso que se define un array como entero y en el llenado se coloca un valor con decimal, 
+        el C# arroja en error al tratar de convertir el tipo de datos <br>
+        en cambio con el array implicito no sucede esto.
+        <pre>
+                 int[] numeros2 = new int[3] { 40, 50, 60.25 };
+        </pre> 
+        <strong>Array de Objetos</strong>, ahora crearemos una clase Empleado que tiene un contructor que recibe nombre y edad. <br>
+        <pre>
+        public class Empleado
+        {
+            public string Nombre { get; }
+            public int Edad { get; }
+
+            public Empleado(string nombre, int edad)
+            {
+                Nombre = nombre;
+                Edad = edad;
+            }
+        }
+        </pre>
+        creamos un array de objeto de la clase Empleado y agregamos nuestro primer objeto al arrary . <br>
+        <pre>
+            Empleado[] arrayEmpleado = new Empleado[2];
+            arrayEmpleado[0] = new Empleado("rondey", 50);
+        </pre>
+        Tambien podemos crear una instancia de Empleado con el objeto Cecilia y luego lo agregamos dentro del array de Objetos <br>
+        <pre>
+            //otra forma de crear primero una instanncia de la clase empleado y luego se agrega al array de objetos.
+            Empleado() ceci = new Empleado("cecilia", 37);
+            arrayEmpleado[1] = ceci;
+        </pre>
+        <strong>Array de tipos o clase anonimas</strong> en que casos usamos clase anonimas : <br>
+        
+        <ul>
+            <li>Cuando necesitas retornar o manejar un conjunto de propiedades solo temporalmente.</li>
+            <li>En consultas LINQ para proyectar solo algunos campos.</li>
+            <li>Cuando no necesitas métodos, solo propiedades.</li>
+            <li>No necesitas reutilizar el tipo en otro lugar del código.</li>
+        </ul>
+        Uso basico:
+        <pre>
+            var persona = new { Nombre = "Juan", Edad = 25 };
+            Console.WriteLine($"Nombre: {persona.Nombre}, Edad: {persona.Edad}");
+        </pre>
+        uso en una Lista:
+        <pre>
+            var personas = new[]
+            {
+                new { Nombre = "Ana", Edad = 28 },
+                new { Nombre = "Luis", Edad = 35 }
+            };
+
+            foreach (var p in personas)
+            {
+                Console.WriteLine($"{p.Nombre} - {p.Edad}");
+            }
+
+        </pre>
+        En una consulta LINQ.
+        <pre>
+            var empleados = new[]
+            {
+                new { Nombre = "Pedro", Edad = 45, Area = "Ventas" },
+                new { Nombre = "Laura", Edad = 32, Area = "TI" }
+            };
+
+            var resultado = empleados
+                .Where(e => e.Edad > 40)
+                .Select(e => new { e.Nombre, e.Area });
+
+            foreach (var r in resultado)
+            {
+                Console.WriteLine($"{r.Nombre} trabaja en {r.Area}");
+            }
+
+        </pre>
+        Agrupamos datos temporalmente. 
+        <pre>
+            string nombre = "Carlos";
+            int salario = 3000;
+
+            var info = new { nombre, salario }; // se infiere el nombre de las propiedades desde las variables
+
+            Console.WriteLine($"{info.nombre} gana {info.salario} USD");
+
+        </pre>
+    </article>
+    <strong>pasar un array como parametro</strong> consiste en enviar un array como pamaetro a un metodo ejemplo: <br>
+    <pre>
+        Console.WriteLine("enviar array como parametro a un metodo");
+        string[] cliente = { "cecilia", "lucila", "yari" };
+        ConsultarCliente(cliente);
+
+        static void ConsultarCliente(string[] cli) 
+        {
+            foreach (var item in cli)
+            {
+                System.Console.WriteLine(item);
+            }
+        }
+    </pre>
+    Tambien podemos para un objeto como parametros por ejemplo tenemos la clase Empleado.cs llenamos los valores y lo 
+    pasamos como parametros al metodo MostrarPerosona() <br>
+    <pre>
+        Empleado[] empleados = new Empleado[3];
+        empleados[0] = new Empleado("cecilia", 37);
+        empleados[1] = new Empleado("juan", 17);
+        empleados[2] = new Empleado("samuel", 9);
+
+        MostrarEmpleado(empleados);
+
+        static void MostrarEmpleado(Empleado[] lista)
+        {
+            foreach (var emp in lista)
+            {
+                System.Console.WriteLine($"{emp.Nombre} y edad {emp.Edad}");
+            }
+        }
+
+    </pre>
+    podemos observar que lo cambia en donde decia tipo <strong>string[]</strong> ahora se coloca <strong>Empleado[]</strong> que es nuetro objeto <br>
+    y cuando recibe el parametro dentro del mentodo tambien se hace el mismo cambio. <br>
     <a href="cursoCSharp.html">⏫</a>
     <hr>
     <h2 id="configurar">Configurar DotNet-ef</h2>

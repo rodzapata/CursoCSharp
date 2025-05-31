@@ -5169,24 +5169,32 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\MIGUEL\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+=======
+    "C:\\Users\\Ryzen\\.nuget\\packages\\": {}
+>>>>>>> ee5c7a36bfa1f57f389ccb681a7fb75200014a62
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MIGUEL\\Documents\\workspace\\CursoCSharp\\exercises\\CursoEFCore8\\CursoEFCore8\\CursoEFCore8.csproj",
+      "projectUniqueName": "C:\\Users\\Ryzen\\Documents\\workspace\\CursoCSharp\\exercises\\CursoEFCore8\\CursoEFCore8\\CursoEFCore8.csproj",
       "projectName": "CursoEFCore8",
-      "projectPath": "C:\\Users\\MIGUEL\\Documents\\workspace\\CursoCSharp\\exercises\\CursoEFCore8\\CursoEFCore8\\CursoEFCore8.csproj",
-      "packagesPath": "C:\\Users\\MIGUEL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MIGUEL\\Documents\\workspace\\CursoCSharp\\exercises\\CursoEFCore8\\CursoEFCore8\\obj\\",
+      "projectPath": "C:\\Users\\Ryzen\\Documents\\workspace\\CursoCSharp\\exercises\\CursoEFCore8\\CursoEFCore8\\CursoEFCore8.csproj",
+      "packagesPath": "C:\\Users\\Ryzen\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ryzen\\Documents\\workspace\\CursoCSharp\\exercises\\CursoEFCore8\\CursoEFCore8\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\MIGUEL\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+=======
+        "C:\\Users\\Ryzen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> ee5c7a36bfa1f57f389ccb681a7fb75200014a62
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5194,6 +5202,10 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+<<<<<<< HEAD
+=======
+        "C:\\Program Files\\dotnet\\library-packs": {},
+>>>>>>> ee5c7a36bfa1f57f389ccb681a7fb75200014a62
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -5252,7 +5264,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+>>>>>>> ee5c7a36bfa1f57f389ccb681a7fb75200014a62
       }
     }
   }
