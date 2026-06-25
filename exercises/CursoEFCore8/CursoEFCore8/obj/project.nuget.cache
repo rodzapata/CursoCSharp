@@ -1,10 +1,6 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "vH/znZh430M=",
-=======
   "dgSpecHash": "IH2b4RNb6e8=",
->>>>>>> ee5c7a36bfa1f57f389ccb681a7fb75200014a62
   "success": true,
   "projectFilePath": "C:\\Users\\Ryzen\\Documents\\workspace\\CursoCSharp\\exercises\\CursoEFCore8\\CursoEFCore8\\CursoEFCore8.csproj",
   "expectedPackageFiles": [
@@ -94,5 +90,12 @@
     "C:\\Users\\Ryzen\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\Ryzen\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Ryzen\\Documents\\workspace\\CursoCSharp\\exercises\\CursoEFCore8\\CursoEFCore8\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
