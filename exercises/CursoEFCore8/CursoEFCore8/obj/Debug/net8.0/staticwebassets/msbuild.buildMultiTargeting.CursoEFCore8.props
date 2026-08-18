@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\CursoEFCore8.props" />
-</Project>
