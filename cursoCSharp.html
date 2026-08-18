@@ -103,6 +103,10 @@
                     <td>propfull + tab</td>
                     <td>Genera propiedad con su campo de respaldo get y set ;</td>
                 </tr>
+                <tr>
+                    <td>svm + tab</td>
+                    <td>static void Main() ;</td>
+                </tr>
             </tbody>
         </table>
 
@@ -113,8 +117,10 @@
     <h2 id="ruta">Ruta de aprendizaje</h2>
     <article>
         Esta es la ruta de aprendizaje para convertirse en Back End, recomendada por Hector de Leon 
-        <a href="https://hdeleon.net/roadmap-programador-backend-net/" target="_blank" rel="noopener noreferrer">Roadmap </a> 
-        Tambien existe esta otra ruta <a href="https://www.youtube.com/watch?v=xTIv_rkaWE4" target="_blank" rel="noopener noreferrer">The coder Cave</a>
+        <a href="https://hdeleon.net/roadmap-programador-backend-net/" target="_blank" rel="noopener noreferrer">Roadmap </a> <br>
+        Tambien existe esta otra ruta <a href="https://www.youtube.com/watch?v=xTIv_rkaWE4" target="_blank" rel="noopener noreferrer">The coder Cave</a> <br>
+        ESte tuporial tambien es bueno <a href="https://www.youtube.com/watch?v=CPPxQlKxQEQ&list=PL2Z95CSZ1N4F7mym8Ca16RoTDVAlIOPlT" target="_blank" rel="noopener noreferrer">Tutorial por informaticonfig</a> <br>
+        
     </article>
 
 
@@ -151,6 +157,15 @@
         <pre>
                  int[] numeros2 = new int[3] { 40, 50, 60.25 };
         </pre> 
+        en versiones anteriores a <strong>csharp 12</strong> en los array se usaban los llaves, <br>
+        pero hoy endia se recomienda la nueva sintaxis que es usar corcheques , ejemplo: <br>
+        <pre>
+            <code>
+                string[] nombre1 = ["rodney","samuel"] ; //version nueva
+                string[] nombre2 = { "rodney", "samuel" }; //version anterior
+                
+            </code>
+        </pre>
         <strong>Array de Objetos</strong>, ahora crearemos una clase Empleado que tiene un contructor que recibe nombre y edad. <br>
         <pre>
         public class Empleado
@@ -267,6 +282,69 @@
     </pre>
     podemos observar que lo cambia en donde decia tipo <strong>string[]</strong> ahora se coloca <strong>Empleado[]</strong> que es nuetro objeto <br>
     y cuando recibe el parametro dentro del mentodo tambien se hace el mismo cambio. <br>
+
+    para actualizar el proyecto de la version 8 a la version 10 tenemos que ir al proyecto Array. <br>
+    <a href="https://www.youtube.com/watch?v=9vEg3JSFnew" target="_blank" rel="noopener noreferrer">Actuaalizar proyectos</a>
+    que tiene la siguiente configuracion : <br>
+    <pre>
+        <code>
+            &lt;Project Sdk="Microsoft.NET.Sdk">
+            
+              &lt;PropertyGroup>
+                &lt;OutputType>Exe&lt;/OutputType>
+                &lt;TargetFramework>net8.0&lt;/TargetFramework>
+                &lt;ImplicitUsings>enable&lt;/ImplicitUsings>
+                &lt;Nullable>enable&lt;/Nullable>
+              &lt;/PropertyGroup>
+            
+            &lt;/Project>
+        </code>
+
+    </pre>
+    y cambiamos la linea <strong>net8.0</strong> por <strong>net10.0</strong> <br>
+    luego entramos a consola para actualizar el paquete : <br>
+    herramientas - lineas de comando - terminal <br>
+    y escribimos: <br>
+    dotnet list package --outdated <br><br>
+
+    en mi caso funciono enseguida por se un proyecto de consola, pero en el caso que sea web con netcore 10 y otras dependencias : <br>
+    hay que darle boton derecho al proyecto y escogre <strong>Administrar paquetes Nuget</strong> luego nos vamos a la pestaña <strong>acualizacion</strong> <br>
+    y le damos al boton <strong>actualizar</strong> <br>
+
+    <strong>suma de array </strong><br>
+    si tengo 2 array que guardan numeros y quiero en tercer array guardar la suma de los 2 array se puede hacer asi: <br>
+    la forma tradicional seria un ciclo que recorra el arreglo y se valla acomulando en otro array <br>
+    <pre>
+        <code>
+            int[] numero1 = [10,20,30];
+            int[] numero2 = [1, 2, 3];
+            
+            Console.WriteLine("sumando usando un ciclo");
+            int[] totalizado = new int[numero1.Length];
+            
+            for (int i = 0; i &lt; numero1.Length; i++)
+            {
+                totalizado[i] = numero1[i] + numero2[i];
+            }
+            Console.WriteLine("totalizado "+string.Join(",", totalizado));
+            
+        </code>
+    </pre>
+
+    la forma moderna usando LINQ y el comando ZIP que usa para convinar colecciones : <br>
+    <pre>
+        <code>
+            int[] numero1 = [10,20,30];
+            int[] numero2 = [1, 2, 3];
+            
+            int[] totalizadoLinq= numero1
+                .Zip(numero2 , (a,b)=> a+b)
+                .ToArray();
+            
+            Console.WriteLine("totalizamos linq "+string.Join(",",totalizadoLinq));
+
+        </code>
+    </pre>
     <a href="cursoCSharp.html">⏫</a>
     <hr>
     <h2 id="configurar">Configurar DotNet-ef</h2>

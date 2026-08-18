@@ -1,4 +1,8 @@
 ﻿using Arrays;
+using System.ComponentModel;
+using System.Runtime.Intrinsics.Arm;
+using System.Threading.Channels;
+
 
 Console.WriteLine("Array ");
 int[] numeros = new int[3] ; //defininos una array de numeros tipo numero 
@@ -6,10 +10,21 @@ numeros[0] = 10 ;
 numeros[1] = 20 ;
 numeros[2] = 30;
 
+string[] nombre1 = ["rodney","samuel"] ;
+string[] nombre2 = { "rodney", "samuel" };
+
+Console.WriteLine(nombre1[0]);
+Console.WriteLine(nombre2[0]);
+
 foreach (var item in numeros)
 {
-    System.Console.WriteLine(item);
+    //System.Console.WriteLine(item);
+    Console.WriteLine(item);
 }
+
+Console.WriteLine("mostramos el array");
+Console.WriteLine(numeros);
+
 
 Console.WriteLine("Array declarando e iniciado en una linea");
 int[] numeros2 = new int[3] { 40, 50, 60 };
@@ -27,7 +42,17 @@ foreach (var item in numeros3)
     System.Console.WriteLine(item);
 }
 
-Console.WriteLine("Array de objetos");
+Console.WriteLine("--- mostrar contenido de array sin recorrerlo con bucles");
+string[] nombres = new string[3];
+nombres[0] = "rodney";
+nombres[1] = "cecilia";
+Console.WriteLine("antes de netcore 8 era asi:");
+Array.ForEach(nombres,Console.WriteLine);
+Console.WriteLine("a partir .net 5 en adelante usamos string.join");
+Console.WriteLine(string.Join(",", nombres));
+
+
+Console.WriteLine("---- Array de objetos");
 
 Empleado[] arrayEmpleado = new Empleado[2];
 arrayEmpleado[0] = new Empleado("rondey", 50);
@@ -54,6 +79,7 @@ static void ConsultarCliente(string[] cli)
 }
 
 
+
 Console.WriteLine("---enviar odjeto Empleado  como parametro a un metodo");
 
 //Arreglo de objeos Empleado
@@ -72,3 +98,24 @@ static void MostrarEmpleado(Empleado[] lista)
     }
 }
 
+Console.WriteLine("--suma de arrays ---");
+int[] numero1 = [10,20,30];
+int[] numero2 = [1, 2, 3];
+
+Console.WriteLine("sumando usando un ciclo");
+int[] totalizado = new int[numero1.Length];
+
+for (int i = 0; i < numero1.Length; i++)
+{
+    totalizado[i] = numero1[i] + numero2[i];
+}
+//Console.WriteLine("totalizado "+string.Join(",", totalizado));
+Console.WriteLine($"totalizado interpolado  {string.Join(",", totalizado)}");
+
+Console.WriteLine("sumando usando LINQ y comando ZIP que convina 2 colecciones");
+
+int[] totalizadoLinq= numero1
+    .Zip(numero2 , (a,b)=> a+b)
+    .ToArray();
+
+Console.WriteLine("totalizamos linq "+string.Join(",",totalizadoLinq));

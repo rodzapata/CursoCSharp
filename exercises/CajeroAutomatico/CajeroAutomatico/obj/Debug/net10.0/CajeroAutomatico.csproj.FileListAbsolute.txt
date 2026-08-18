@@ -1,0 +1,15 @@
+C:\Users\uuario\Documents\workspace\CursoCSharp\exercises\CajeroAutomatico\CajeroAutomatico\obj\Debug\net10.0\CajeroAutomatico.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\uuario\Documents\workspace\CursoCSharp\exercises\CajeroAutomatico\CajeroAutomatico\obj\Debug\net10.0\CajeroAutomatico.AssemblyInfoInputs.cache
+C:\Users\uuario\Documents\workspace\CursoCSharp\exercises\CajeroAutomatico\CajeroAutomatico\obj\Debug\net10.0\CajeroAutomatico.AssemblyInfo.cs
+C:\Users\uuario\Documents\workspace\CursoCSharp\exercises\CajeroAutomatico\CajeroAutomatico\obj\Debug\net10.0\CajeroAutomatico.csproj.CoreCompileInputs.cache
+C:\Users\uuario\Documents\workspace\CursoCSharp\exercises\CajeroAutomatico\CajeroAutomatico\obj\Debug\net10.0\CajeroAutomatico.sourcelink.json
+C:\Users\uuario\Documents\workspace\CursoCSharp\exercises\CajeroAutomatico\CajeroAutomatico\bin\Debug\net10.0\CajeroAutomatico.exe
+C:\Users\uuario\Documents\workspace\CursoCSharp\exercises\CajeroAutomatico\CajeroAutomatico\bin\Debug\net10.0\CajeroAutomatico.deps.json
+C:\Users\uuario\Documents\workspace\CursoCSharp\exercises\CajeroAutomatico\CajeroAutomatico\bin\Debug\net10.0\CajeroAutomatico.runtimeconfig.json
+C:\Users\uuario\Documents\workspace\CursoCSharp\exercises\CajeroAutomatico\CajeroAutomatico\bin\Debug\net10.0\CajeroAutomatico.dll
+C:\Users\uuario\Documents\workspace\CursoCSharp\exercises\CajeroAutomatico\CajeroAutomatico\bin\Debug\net10.0\CajeroAutomatico.pdb
+C:\Users\uuario\Documents\workspace\CursoCSharp\exercises\CajeroAutomatico\CajeroAutomatico\obj\Debug\net10.0\CajeroAutomatico.dll
+C:\Users\uuario\Documents\workspace\CursoCSharp\exercises\CajeroAutomatico\CajeroAutomatico\obj\Debug\net10.0\refint\CajeroAutomatico.dll
+C:\Users\uuario\Documents\workspace\CursoCSharp\exercises\CajeroAutomatico\CajeroAutomatico\obj\Debug\net10.0\CajeroAutomatico.pdb
+C:\Users\uuario\Documents\workspace\CursoCSharp\exercises\CajeroAutomatico\CajeroAutomatico\obj\Debug\net10.0\CajeroAutomatico.genruntimeconfig.cache
+C:\Users\uuario\Documents\workspace\CursoCSharp\exercises\CajeroAutomatico\CajeroAutomatico\obj\Debug\net10.0\ref\CajeroAutomatico.dll
