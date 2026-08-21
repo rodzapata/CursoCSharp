@@ -20,6 +20,7 @@
         <li><a href="cursoCsharp.html#atajos">atajos del teclado en visual studio</a></li>
         <li><a href="cursoCsharp.html#ruta">Ruta de aprendizaje </a></li>
         <li><a href="cursoCsharp.html#basico-array">Array</a></li>
+        <li><a href="cursoCsharp.html#mapas">Mapas o Dictionary</a></li>
         <li><a href="cursoCsharp.html#configurar">Configurar DotNet-ef</a></li>
         <li><a href="cursoCsharp.html#ejercicios_dotnet_ef">ejercicios DotNet-ef</a></li>
         <li><a href="cursoCsharp.html#db_context">Creacion de DBContext</a></li>
@@ -345,6 +346,34 @@
 
         </code>
     </pre>
+
+    <a href="cursoCSharp.html">⏫</a>
+    <hr>
+    <h2 id="mapas">Mapas o Dictionary</h2>
+    <article>
+        Son colecciones que esta configurado por Clave y valor <br>
+        <pre>
+            <code>
+                Dictionar&lt;int, string> frutas= new Dictionary&lt;int, string>();
+                frutas.Add(1, "manzana");
+                frutas.Add(2, "pera");
+                frutas.Add(3, "uvas");
+        
+                Console.WriteLine(frutas[2]);
+                
+                foreach (var s in frutas)
+                {
+                    //Console.WriteLine(s);
+                    Console.WriteLine($"Clave: {s.Key} y valor: {s.Value}");
+                }
+        
+                Console.ReadKey();
+                
+            </code>
+        </pre>
+
+    </article>
+
     <a href="cursoCSharp.html">⏫</a>
     <hr>
     <h2 id="configurar">Configurar DotNet-ef</h2>

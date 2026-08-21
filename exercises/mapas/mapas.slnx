@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="listas/listas.csproj" />
+  <Project Path="mapas/mapas.csproj" />
+</Solution>
