@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="../Genericos/Genericos.csproj" Id="ec19d67d-7859-4911-a405-9f0cd161e4fb" />
   <Project Path="../Herencias/Herencias.csproj" Id="a6e5dd1d-92b1-4eba-81e1-35b583d022c1" />
   <Project Path="../init/init.csproj" Id="1869f8f3-5b6b-441e-b83d-4f75fd08c782" />
   <Project Path="listas/listas.csproj" />
