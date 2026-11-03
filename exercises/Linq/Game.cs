@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace Linq;
-public class Game
+public record Game
 {
     public string Title { get; set; } = string.Empty;
     public GameGenre Genre { get; set; } 

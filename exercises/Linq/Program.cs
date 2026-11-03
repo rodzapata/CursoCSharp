@@ -2,8 +2,8 @@
 using System.Reflection;
 
 Console.WriteLine("=== Ejercicios con lINQ ====");
-
-
+// sintasys antes de charp 12
+/*
 var games = new List<Game>
 {
     new() {Title="The legend of Zelda",Genre=GameGenre.Adventure, ReleaseYear=2020, Level=1, Price=100m},
@@ -11,6 +11,14 @@ var games = new List<Game>
     new() {Title="Resident Evil",Genre=GameGenre.Horror, ReleaseYear=1990, Level=5, Price=90m},
 
 };
+*/
+
+// sintasyx moderna 
+List<Game> games = [
+    new() {Title="The legend of Zelda",Genre=GameGenre.Adventure, ReleaseYear=2020, Level=1, Price=100m},
+    new() {Title="Mario Bross",Genre=GameGenre.Adventure, ReleaseYear=1987, Level=5, Price=80m},
+    new() {Title="Resident Evil",Genre=GameGenre.Horror, ReleaseYear=1990, Level=5, Price=90m},
+    ];
 
 Console.WriteLine("filtramos Genero=Terror");
 
